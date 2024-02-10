@@ -19247,3 +19247,47 @@ overflow: hidden;
 .results__content__item ul li span {
   line-height: 130%;
 }
+
+.freelance-offer-reverse .freelance-offer__content__text {
+  padding-left: calc(140 / 1600 * 100vw);
+  max-width: calc(555 / 1600 * 100vw);
+}
+
+.freelance-offer-reverse .freelance-offer__content__pic {
+  left: unset;
+  right: 0;
+  top: calc(-57 / 1600 * 100vw);
+  bottom: unset;
+  width: calc(900 / 1600 * 100vw);
+  height: calc(550 / 1600 * 100vw);
+}
+
+.diplomas-2 .diplomas__list li:before{
+  background-image: url("../images/blue-check.svg");
+}
+
+.diplomas-2 .diplomas__row__pic-1 {
+  margin-left: calc(30 / 1600 * 100vw);
+}
+
+
+.diplomas-2 .diplomas__row__content {
+  margin-left: calc(10 / 1600 * 100vw);
+}
+.diplomas-2 .diplomas__row-reverse {
+  padding-right: 0;
+}
+
+.tarif__srok {
+  font-weight: 400;
+  text-align: center;
+  padding-left: 0;
+}
+
+.tarif-freelance .tarif__list {
+  padding-left: 0;
+}
+
+.tarif-freelance .tarif__content2 .tarif__item {
+  height: calc(960 / 1600 * 100vw);
+}
