@@ -127,6 +127,7 @@ button {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
   background: none;
+  font-family: "RF Dewi";
 }
 
 .container {
@@ -8483,7 +8484,7 @@ li.creator__text__name {
   width: max-content;
   font-size: 1.875vw;
   font-weight: 700;
-  background-color: var(--cm-accent-red);
+  background-color: var(--cm-accent-blue);
   padding: 0.6875vw 1.5625vw;
   border-radius: 0.625vw;
   transform: rotate(-3.76deg);
@@ -19039,10 +19040,15 @@ overflow: hidden;
   margin-left: 29.3vw;
 }
 
+.freelance-income__graph {
+  position: relative;
+}
+
 .freelance-income__graph svg {
   width: calc(1118 / 1600 * 100vw);
   display: block;
   margin: 0 auto;
+  height: auto;
 }
 
 .freelance-income .section-title {
@@ -19290,4 +19296,343 @@ overflow: hidden;
 
 .tarif-freelance .tarif__content2 .tarif__item {
   height: calc(960 / 1600 * 100vw);
+}
+
+.freelance-formats__title {
+  margin-bottom: calc(60 / 1600 * 100vw);
+}
+
+.freelance-formats__item {
+  width: calc(1160 / 1600 * 100vw);
+  margin: 0 auto;
+  height: auto;
+  pointer-events: none;
+}
+
+.start__conditions__item-1 {
+  width: calc(234 / 1600 * 100vw);
+}
+
+.start__conditions__freelance {
+  max-width: calc(578 / 1600 * 100vw);
+}
+
+.start__conditions__item-2 {
+  width: calc(324 / 1600 * 100vw);
+}
+
+.freelance-income__plate {
+  font-size: 0.875vw;
+  color: #2D2D2D;
+  padding: 0.8125vw 0.9375vw;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px rgba(26, 32, 77, 0.15);
+  border-radius: 0.625vw;
+  width: max-content;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.7s ease;
+}
+
+.freelance-income__plate.active {
+  opacity: 1;
+  transition: opacity 1.2s ease;
+}
+
+.freelance-income__plate[data-dot="1"] {
+  left: calc(250 / 1600 * 100vw);
+  bottom: calc(190 / 1600 * 100vw);
+}
+
+.freelance-income__plate[data-dot="2"] {
+  bottom: calc(250 / 1600 * 100vw);
+  left: calc(450 / 1600 * 100vw);
+}
+
+.freelance-income__plate[data-dot="3"] {
+  bottom: calc(310 / 1600 * 100vw);
+  left: calc(655 / 1600 * 100vw);
+}
+
+.freelance-income__plate[data-dot="4"] {
+  bottom: calc(370 / 1600 * 100vw);
+  left: calc(840 / 1600 * 100vw);
+}
+
+.freelance-income__plate[data-dot="5"] {
+  bottom: calc(430 / 1600 * 100vw);
+  left: calc(980 / 1600 * 100vw);
+}
+
+.results__content__item-1 {
+  background-image: url('../images/results-bg-1.png');
+}
+
+.results__content__item-2 {
+  background-image: url('../images/results-bg-2.png');
+}
+
+.results__content__item-3 {
+  background-image: url('../images/results-bg-3.png');
+}
+
+@media (max-width: 500px) {
+  .welcome-11 .welcome__man {
+    width: calc(360 / 360 * 100vw);
+    height: calc(360 / 360 * 100vw);
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 102vw;
+    top: unset;
+    right: unset;
+  }
+
+  .welcome-11 .welcome__offer__title {
+    font-size: calc(40 / 360 * 100vw);
+    max-width: unset;
+    text-align: center;
+  }
+
+  .welcome-11 .welcome__offer__title::after {
+    top: unset;
+    bottom: calc(-55 / 360 * 100vw);
+    margin-left: 0;
+    left: 50%;
+  }
+
+  .welcome-11 .welcome__offer__desc {
+    max-width: calc(248 / 360 * 100vw);
+    margin-top: calc(85 / 360 * 100vw);
+  }
+
+  .ways-growup__content {
+    flex-direction: column;
+  }
+
+  .ways-growup__item {
+    width: calc(340 / 360 * 100vw);
+    height: calc(462 / 360 * 100vw);
+    padding: calc(9.45 / 360 * 100vw);
+    margin-bottom: calc(40 / 360 * 100vw);
+    border-radius: calc(20 / 360 * 100vw);
+  }
+
+  .ways-growup__item__pic {
+    width: calc(321 / 360 * 100vw);
+    height: calc(207 / 360 * 100vw);
+    margin-bottom: calc(30 / 360 * 100vw);
+  }
+
+  .ways-growup__item__text h3,
+  .ways-growup__item__text__list li {
+    font-size: calc(16 / 360 * 100vw);
+  }
+
+  .ways-growup__item__text__list li {
+    padding-left: calc(20 / 360 * 100vw);
+    margin-bottom: calc(10 / 360 * 100vw);
+  }
+
+  .ways-growup__item__text__list li:before {
+    width: calc(8 / 360 * 100vw);
+    height: calc(8 / 360 * 100vw);
+    top: calc(6 / 360 * 100vw);
+  }
+
+  .ways-growup__item__text {
+    padding-left: calc(10 / 360 * 100vw);
+  }
+
+  .ways-growup__item__text h3 {
+    margin-bottom: calc(10 / 360 * 100vw);
+  }
+
+  .ways-growup__arrow {
+    width: calc(56 / 360 * 100vw);
+    height: calc(56 / 360 * 100vw);
+    bottom: calc(30 / 360 * 100vw);
+    right: calc(30 / 360 * 100vw);
+  }
+
+  .freelance-formats__item {
+    width: calc(340 / 360 * 100vw);
+    height: auto;
+  }
+
+  .freelance-formats__title {
+    margin-bottom: calc(50 / 360 * 100vw);
+  }
+
+  .freelance-offer {
+    margin: 0;
+    width: 100%;
+  }
+
+  .freelance-offer__content {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .freelance-offer__content__pic {
+    position: static;
+    width: calc(450 / 360 * 100vw);
+    height: auto;
+    margin-left: calc(-80 / 360 * 100vw);
+    margin-top: calc(50 / 360 * 100vw);
+  }
+
+  .freelance-offer__content__text {
+    padding-left: 0;
+  }
+
+  .freelance-offer__content__text h2 {
+    font-size: calc(26 / 360 * 100vw);
+    text-align: center;
+  }
+
+  .freelance-offer__content__text p:before {
+    display: none;
+  }
+
+  .freelance-offer__content__text p {
+    text-align: center;
+    font-size: calc(16 / 360 * 100vw);
+    width: calc(320 / 360 * 100vw);
+    margin: calc(20 / 360 * 100vw) auto;
+  }
+
+  .freelance-offer__content__text .basic-btn {
+    width: calc(300 / 360 * 100vw);
+    margin: 0 auto;
+    display: block;
+  }
+
+  .results__content {
+    display: flex;
+    flex-direction: column;
+    max-width: unset;
+  }
+
+  .results__content__item {
+    width: calc(340 / 360 * 100vw);
+    height: calc(570 / 360 * 100vw);
+    border-radius: calc(20 / 360 * 100vw);
+    padding-top: calc(30 / 360 * 100vw);
+  }
+
+  .results__content__item p {
+    font-size: calc(16 / 360 * 100vw);
+  }
+
+  .results__content__item h3 {
+    font-size: calc(24 / 360 * 100vw);
+    margin-bottom: calc(20 / 360 * 100vw);
+  }
+
+  .results__content__item ul li {
+    font-size: calc(16 / 360 * 100vw);
+    margin-bottom: calc(10 / 360 * 100vw);
+  }
+
+  .results__content__item ul li:before {
+    width: calc(20 / 360 * 100vw);
+    height: calc(20 / 360 * 100vw);
+    margin-right: calc(14 / 360 * 100vw);
+  }
+
+  .results__content__item ul {
+    padding: 0 calc(10 / 360 * 100vw) 0 calc(25 / 360 * 100vw);
+  }
+
+  .results__content__item  {
+    margin-bottom: calc(40 / 360 * 100vw);
+  }
+
+  .results__content__item-1 {
+    background-image: url('../images/result-bg-1-mob.png');
+  }
+  
+  .results__content__item-2 {
+    background-image: url('../images/result-bg-2-mob.png');
+  }
+  
+  .results__content__item-3 {
+    background-image: url('../images/result-bg-3-mob.png');
+  }
+
+  .freelance-offer-reverse .freelance-offer__content__text {
+    padding-left: unset;
+    max-width: unset;
+  }
+
+  .freelance-offer-reverse .freelance-offer__content__pic {
+    width: calc(514 / 360 * 100vw);
+    height: calc(314 / 360 * 100vw);
+    margin-left: calc(-50 / 360 * 100vw)
+  }
+
+  .freelance-offer-reverse {
+    margin-top: calc(50 / 360 * 100vw);
+    padding-top: calc(60 / 360 * 100vw);
+    border-radius: 0;
+  }
+
+  .tarif-freelance .tarif__content2 .tarif__item {
+    height: calc(960 / 360 * 100vw);
+  }
+
+  .start__conditions__freelance {
+    max-width: unset;
+  }
+  
+  .start__conditions__item-1,
+  .start__conditions__item-2 {
+    width: 83.3333333333vw;
+  }
+
+  .freelance-income__graph svg {
+    width: calc(320 / 360 * 100vw);
+    height: auto;
+  }
+
+  .freelance-income .section-title {
+    margin-bottom: calc(40 / 360 * 100vw);
+  }
+
+  .freelance-income {
+    margin-bottom: calc(90 / 360 * 100vw);
+  }
+
+  .freelance-income__plate {
+    font-size: 3.3333333333vw;
+    padding: 2.7777777778vw 3.8888888889vw;
+    border-radius: 2.7777777778vw;
+  }
+
+  .freelance-income__plate[data-dot="1"] {
+    left: calc(50 / 360* 100vw);
+    bottom: calc(403 / 360* 100vw);
+  }
+
+  .freelance-income__plate[data-dot="2"] {
+    left: calc(80 / 360* 100vw);
+    bottom: calc(450 / 360* 100vw);
+  }
+
+  .freelance-income__plate[data-dot="3"] {
+    left: calc(122 / 360* 100vw);
+    bottom: calc(493 / 360* 100vw);
+  }
+
+  .freelance-income__plate[data-dot="4"] {
+    left: calc(163 / 360* 100vw);
+    bottom: calc(538 / 360* 100vw);
+  }
+
+  .freelance-income__plate[data-dot="5"] {
+    left: calc(222 / 360* 100vw);
+    bottom: calc(584 / 360* 100vw);
+  }
 }

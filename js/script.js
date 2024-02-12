@@ -460,6 +460,37 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(e);
   }
   try {
+    var dots = document.querySelectorAll(".graphic-dot-1");
+    var plates = document.querySelectorAll(".demand__graphic__plate-1");
+    dots.forEach(function (dot) {
+      dot.addEventListener("mouseover", function (e) {
+        plates.forEach(function (plate) {
+          if (dot.dataset.dot === plate.dataset.dot) {
+            plate.classList.add("active");
+          }
+        });
+      });
+      dot.addEventListener("mouseout", function (e) {
+        plates.forEach(function (plate) {
+          if (dot.dataset.dot === plate.dataset.dot) {
+            plate.classList.remove("active");
+          }
+        });
+      });
+      if (window.innerWidth >= 500) {
+        dot.addEventListener("click", function (e) {
+          document.querySelector(".structure").scrollIntoView({
+            block: "start",
+            inline: "nearest",
+            behavior: "smooth",
+          });
+        });
+      }
+    });
+  } catch (e) {
+    console.log(e);
+  }
+  try {
     var _dots = document.querySelectorAll(".graphic-dot-2");
     var _plates = document.querySelectorAll(".demand__graphic__plate-2");
     _dots.forEach(function (dot) {
@@ -472,6 +503,37 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       dot.addEventListener("mouseout", function (e) {
         _plates.forEach(function (plate) {
+          if (dot.dataset.dot === plate.dataset.dot) {
+            plate.classList.remove("active");
+          }
+        });
+      });
+      if (window.innerWidth >= 500) {
+        dot.addEventListener("click", function (e) {
+          document.querySelector(".structure").scrollIntoView({
+            block: "start",
+            inline: "nearest",
+            behavior: "smooth",
+          });
+        });
+      }
+    });
+  } catch (e) {
+    console.log(e);
+  }
+  try {
+    var dots = document.querySelectorAll(".freelance-income__dot");
+    var plates = document.querySelectorAll(".freelance-income__plate");
+    dots.forEach(function (dot) {
+      dot.addEventListener("mouseover", function (e) {
+        plates.forEach(function (plate) {
+          if (dot.dataset.dot === plate.dataset.dot) {
+            plate.classList.add("active");
+          }
+        });
+      });
+      dot.addEventListener("mouseout", function (e) {
+        plates.forEach(function (plate) {
           if (dot.dataset.dot === plate.dataset.dot) {
             plate.classList.remove("active");
           }
