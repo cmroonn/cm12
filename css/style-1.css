@@ -5143,6 +5143,7 @@ a.basic-btn {
 @media (max-width: 500px) {
   .structure {
     padding-top: 25vw;
+    padding-bottom: calc(50 / 360 * 100vw);
   }
 }
 
@@ -19634,5 +19635,9 @@ overflow: hidden;
   .freelance-income__plate[data-dot="5"] {
     left: calc(222 / 360* 100vw);
     bottom: calc(584 / 360* 100vw);
+  }
+
+  .freelance-formats {
+    padding-top: calc(60 / 360 * 100vw);
   }
 }
