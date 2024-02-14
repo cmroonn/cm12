@@ -8596,6 +8596,7 @@ li.creator__text__name {
 .start__form__subtitle {
   text-align: center;
   margin-bottom: 1.1875vw;
+  font-size: calc(16 / 1600 * 100vw);
 }
 @media (max-width: 500px) {
   .start__form__subtitle {
@@ -19639,5 +19640,69 @@ overflow: hidden;
 
   .freelance-formats {
     padding-top: calc(60 / 360 * 100vw);
+  }
+}
+
+.members__text .get-access__heading {
+  font-weight: 400;
+}
+
+.start__offer span,
+.start__offer span del {
+  color: #A5B4CE;
+}
+
+.tarif__bottom__warning {
+  max-width: calc(1060 / 1600 * 100vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarif__item__pic4 {
+  width: calc(234 / 1600 * 100vw);
+  height: calc(272 / 1600 * 100vw);
+  left: 51%;
+  top: calc(-136 / 1600 * 100vw);
+}
+
+.program__module__heading__tip {
+  color: #fff;
+  background-color: rgba(255, 255, 255 , 0.1);
+  border-radius: calc(10 / 1600 * 100vw);
+  padding: calc(15 / 1600 * 100vw) calc(20 / 1600 * 100vw);
+  font-size: calc(16 / 1600 * 100vw);
+}
+
+@media (max-width: 500px) {
+  .program-12 .program__module__heading {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .program-12 .program__module__heading h3 {
+    text-align: left;
+    max-width: calc(140 / 360 * 100vw);
+  }
+
+  .program__module__heading__tip {
+    border-radius: calc(10 / 360 * 100vw);
+    padding: calc(10 / 360 * 100vw) calc(20 / 360 * 100vw);
+    font-size: calc(12 / 360 * 100vw);
+  }
+
+  .tarif__item__pic4 {
+    top: calc(-120 / 360 * 100vw);
+    left: 50%;
+    width: 56.6666666667vw;
+    height: 67.2222222222vw;
+  }
+
+  .tarif__srok {
+    margin-bottom: calc(15 / 360 * 100vw);
+  }
+
+  .tarif__bottom__warning {
+    max-width: unset;
   }
 }
