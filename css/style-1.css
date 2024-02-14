@@ -19675,20 +19675,20 @@ overflow: hidden;
 
 @media (max-width: 500px) {
   .program-12 .program__module__heading {
-    flex-direction: row;
-    text-align: left;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .program-12 .program__module__heading h3 {
-    text-align: left;
-    max-width: calc(140 / 360 * 100vw);
+    font-size: calc(20 / 360 * 100vw);
   }
+
+
 
   .program__module__heading__tip {
     border-radius: calc(10 / 360 * 100vw);
     padding: calc(10 / 360 * 100vw) calc(20 / 360 * 100vw);
     font-size: calc(12 / 360 * 100vw);
+    margin-top: calc(10 / 360 * 100vw);
   }
 
   .tarif__item__pic4 {
