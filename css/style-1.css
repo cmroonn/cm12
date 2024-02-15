@@ -315,6 +315,7 @@ a.basic-btn {
 .open-signup-popup,
 .open-signupclub-popup {
   cursor: pointer;
+  pointer-events: unset;
 }
 
 .get-free-access {
@@ -6994,7 +6995,6 @@ li.creator__text__name {
   display: block;
   flex-shrink: 0;
   user-select: none;
-  pointer-events: none;
 }
 @media (max-width: 500px) {
   .first-project-pic {
@@ -7083,7 +7083,7 @@ li.creator__text__name {
   top: -1.375vw;
   width: 43.875vw;
   height: 37.625vw;
-  pointer-events: none;
+ 
   user-select: none;
 }
 @media (max-width: 500px) {
@@ -19040,8 +19040,22 @@ overflow: hidden;
 }
 .welcome-11 .welcome__offer__title::after {
   margin-left: 29.3vw;
+  display: none;
 }
 
+.welcome-11 .welcome__offer__title {
+  max-width: 36.375vw;
+}
+
+.welcome-11 .welcome__offer__desc {
+  font-size: calc(26 / 1600 * 100vw);
+}
+
+@media (max-width: 500px) {
+  .welcome-11 .welcome__offer__desc {
+    font-size: calc(16 / 360 * 100vw);
+  }
+}
 .freelance-income__graph {
   position: relative;
 }
@@ -19308,7 +19322,6 @@ overflow: hidden;
   width: calc(1160 / 1600 * 100vw);
   margin: 0 auto;
   height: auto;
-  pointer-events: none;
 }
 
 .start__conditions__item-1 {
@@ -19324,7 +19337,7 @@ overflow: hidden;
 }
 
 .freelance-income__plate {
-  font-size: 0.875vw;
+  font-size: calc(20 / 1600 * 100vw);
   color: #2D2D2D;
   padding: 0.8125vw 0.9375vw;
   background-color: #fff;
@@ -19385,9 +19398,10 @@ overflow: hidden;
     height: calc(360 / 360 * 100vw);
     left: 50%;
     transform: translate(-50%, 0);
-    bottom: 102vw;
+    /* bottom: 102vw; */
     top: unset;
     right: unset;
+    bottom: 122vw;
   }
 
   .welcome-11 .welcome__offer__title {
@@ -19404,8 +19418,8 @@ overflow: hidden;
   }
 
   .welcome-11 .welcome__offer__desc {
-    max-width: calc(248 / 360 * 100vw);
-    margin-top: calc(85 / 360 * 100vw);
+    max-width: calc(283 / 360 * 100vw);
+    margin-top: calc(25 / 360 * 100vw);
   }
 
   .ways-growup__content {
@@ -19705,4 +19719,8 @@ overflow: hidden;
   .tarif__bottom__warning {
     max-width: unset;
   }
+}
+
+.program-12 .program__module {
+  pointer-events: unset;
 }
