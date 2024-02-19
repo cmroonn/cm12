@@ -524,11 +524,21 @@ document.addEventListener("DOMContentLoaded", function () {
   try {
     var dots = document.querySelectorAll(".freelance-income__dot");
     var plates = document.querySelectorAll(".freelance-income__plate");
+
+    function scrollTo () {
+      document.querySelector(".ways-growup").scrollIntoView({
+        block: "start",
+        inline: "nearest",
+        behavior: "smooth",
+      });
+    }
+
     dots.forEach(function (dot) {
       dot.addEventListener("mouseover", function (e) {
         plates.forEach(function (plate) {
           if (dot.dataset.dot === plate.dataset.dot) {
             plate.classList.add("active");
+            setTimeout(() => dot.addEventListener("click", scrollTo), 500);
           }
         });
       });
@@ -536,17 +546,12 @@ document.addEventListener("DOMContentLoaded", function () {
         plates.forEach(function (plate) {
           if (dot.dataset.dot === plate.dataset.dot) {
             plate.classList.remove("active");
+            dot.removeEventListener("click", scrollTo);
           }
         });
       });
       if (window.innerWidth >= 500) {
-        dot.addEventListener("click", function (e) {
-          document.querySelector(".structure").scrollIntoView({
-            block: "start",
-            inline: "nearest",
-            behavior: "smooth",
-          });
-        });
+        dot.addEventListener("click", scrollTo);
       }
     });
   } catch (e) {

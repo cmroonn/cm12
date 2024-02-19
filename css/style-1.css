@@ -9034,8 +9034,8 @@ form.popup-timer__form {
 @media (max-width: 500px) {
   .popup-timer__policy {
     max-width: unset;
-    margin-top: 2.7777777778vw;
-    margin-bottom: 4.1666666667vw;
+    margin-top: 4vw;
+    margin-bottom: 0;
   }
 }
 
@@ -9069,7 +9069,7 @@ form.popup-timer__form {
 
 @media (max-width: 500px) {
   .popup-basic {
-    padding: 9.7222222222vw 5.5555555556vw;
+    padding: 9.7222222222vw 5.5555555556vw calc(20 / 360 * 100vw) 5.5555555556vw;
   }
   .popup-basic__title {
     max-width: unset;
@@ -19496,7 +19496,7 @@ overflow: hidden;
     width: calc(450 / 360 * 100vw);
     height: auto;
     margin-left: calc(-80 / 360 * 100vw);
-    margin-top: calc(50 / 360 * 100vw);
+    margin-top: calc(35 / 360 * 100vw);
   }
 
   .freelance-offer__content__text {
@@ -19584,15 +19584,20 @@ overflow: hidden;
   }
 
   .freelance-offer-reverse .freelance-offer__content__pic {
-    width: calc(514 / 360 * 100vw);
-    height: calc(314 / 360 * 100vw);
-    margin-left: calc(-50 / 360 * 100vw)
+    width: calc(500 / 360 * 100vw);
+    height: auto;
+    margin-left: calc(-52 / 360 * 100vw);
+    margin-top: calc(-55 / 360 * 100vw);
   }
 
   .freelance-offer-reverse {
     margin-top: calc(50 / 360 * 100vw);
     padding-top: calc(60 / 360 * 100vw);
     border-radius: 0;
+  }
+
+  .freelance-offer-reverse .freelance-offer__content .basic-btn {
+    bottom: calc(-40 / 360 * 100vw);
   }
 
   .tarif-freelance .tarif__content2 .tarif__item {
@@ -19719,8 +19724,46 @@ overflow: hidden;
   .tarif__bottom__warning {
     max-width: unset;
   }
+
+  .program__module__heading  {
+    margin-bottom: calc(20 / 360 * 100vw);
+  }
+
+  .freelance-offer__content {
+    position: static;
+  }
+
+  .freelance-offer__content .basic-btn {
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .instrument__content-12.active {
+    height: 256.625vw;
+  }
+
+  .start__title {
+    font-size: calc(30 / 360 * 100vw);
+  }
+
+  .start__conditions__item {
+    padding-left: calc(25 / 360 * 100vw);
+  }
+
+  .zapis {
+    margin-top: calc(-30 / 360 * 100vw);
+  }
+
+  .zapis__content {
+    margin-bottom: 0;
+  }
+
+  
 }
 
 .program-12 .program__module {
   pointer-events: unset;
 }
+
