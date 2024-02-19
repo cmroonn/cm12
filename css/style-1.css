@@ -19767,3 +19767,6 @@ overflow: hidden;
   pointer-events: unset;
 }
 
+.freelance-income__dot {
+  cursor: pointer;
+}

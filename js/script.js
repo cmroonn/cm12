@@ -588,15 +588,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         btn.addEventListener("click", function () {
           if (btn.classList.contains("active")) {
-            // btn.classList.remove("active");
-            // _elems2.forEach(function (el) {
-            //   if (btn.dataset.id === el.dataset.id) {
-            //     el.style.height = "0px";
-            //     setTimeout(function () {
-            //       el.classList.remove("active");
-            //     }, 200);
-            //   }
-            // });
+            btn.classList.remove("active");
+            _elems2.forEach(function (el) {
+              if (btn.dataset.id === el.dataset.id) {
+                el.style.height = "0px";
+                setTimeout(function () {
+                  el.classList.remove("active");
+                }, 200);
+              }
+            });
           } else {
             // _buttons10.forEach(function (btn2) {
             //   return btn2.classList.remove("active");
