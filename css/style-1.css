@@ -7080,7 +7080,7 @@ li.creator__text__name {
 .portfolio__pic {
   position: absolute;
   left: -11.5625vw;
-  top: -1.375vw;
+  top: 1.625vw;
   width: 43.875vw;
   height: 37.625vw;
  
@@ -7088,11 +7088,11 @@ li.creator__text__name {
 }
 @media (max-width: 500px) {
   .portfolio__pic {
-    width: 120%;
+    width: 139%;
     height: auto;
     top: unset;
-    left: 0;
-    bottom: -119.4444444444vw;
+    left: -16px;
+    bottom: -138.444444vw;
   }
 }
 
